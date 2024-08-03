@@ -151,7 +151,7 @@ var schema = v.object({
 
 Unlike objects, this is a general typing of dictionary without the specific keys
 
-```gdscripts
+```gdscript
 var dict_schema = v.dict(z.string(), z.string())
 dict_schema.validate({"hello": "true"}) # true
 dict_schema.validate({"hello": 10, "hello2": "hello"}) # false
